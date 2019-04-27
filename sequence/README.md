@@ -34,12 +34,49 @@ Para el caso infinito,
 
 E = (1, 2, 3, 4, ...)
 
-# Sobre este repositorio. 
+# Una forma de crear una secuencia en python.
+
+Podemos crear una lista
+
+l = [1, 2, 3, 4]
+
+Pero para secuencias más laboriosas, que no
+podemos escribir su lista, tenemos que programar
+que se genere. 
+
+Veamos, con el siguiente código podemos generar
+muchos tipos de secuencias. 
+
+
+for n in range (1,10): 
+     print(n)
+
+Lo que nos arroja como output
+
+>>>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+Pero, a partir de esta secuencia podemos generar
+otras más interesantes. 
+
+for n in range(1,10): 
+    print(2 * n + 1)
 
 Este conjunto de scripts producen secuencias.
  
 Algunas secuencias que queremos poner aquí.
  
+
 La secuencia de números primos. 
 Fibonacci
 La secuencia de Cauchy
@@ -50,11 +87,26 @@ La secuencia de los números pares puede ser definida así:
 
 (2n)nEN
 
+
+En python: 
+
+```python
+for n in range(1,1000):
+    print(n * 2)
+```
+
+
 La secuencia de los números cuadrados puede ser así: 
 (n2)nEN
 
+```python
+for n in range(1,1000):
+    print( n ** 2)
+```
 
 Otra manera, por recursión. 
+
+Por ejemplo, la secuencia fibonacci. 
 
 ¿Más info?
 
